@@ -1,0 +1,30 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Jeet will tell you what to Eat!</h1>
+    <p class="lead">Find out what are the best and worst things about the top surrounding restaurants!</p>
+    <img src="assets/images/jeet.jpg">
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Restaurants:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="restaurant in awesomeRestaurants">
+        <li><a ng-href="/restaurants/{{restaurant.name}}" ng-click="">{{restaurant.name}}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p>| Ranjeet Pendse |
+        <a href="https://twitter.com/JeetsTweets16">@JeetsTweets16</a> |
+         </p>
+  </div>
+</footer>
